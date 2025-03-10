@@ -1,6 +1,7 @@
 package assignments;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 //WAP to create an array of size 4 which belongs to int type and 
 //copy its values into a new array in reverse order
@@ -9,11 +10,13 @@ public class Assignment29 {
 
 	public static void main(String[] args) {
 
-		int rollno[] = new int[4];
-		rollno[0] = 10;
-		rollno[1] = 43;
-		rollno[2] = 67;
-		rollno[3] = 89;
+		Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+		int rollno[] = new int[size];
+		for(int i = 0 ; i <= rollno.length-1 ; i++)
+		{
+			rollno[i] = sc.nextInt();
+		}
 		
 		int reverse[] = new int[rollno.length];
 		

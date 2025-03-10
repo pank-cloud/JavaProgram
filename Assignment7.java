@@ -10,7 +10,7 @@ public class Assignment7 {
 	
 	static void add(double a, int b, boolean f)
 	{
-		System.out.println("Parameterized Method");
+		System.out.println(" static Parameterized Method");
 	}
 	
 	void add(char c)
@@ -23,7 +23,7 @@ public class Assignment7 {
 		Assignment7 a = new Assignment7();
 		a.add('h');
 		add();
-		add(43345, 20, false);
+		add(43345.0, 20, false);
 		
 	}
 

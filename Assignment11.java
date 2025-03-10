@@ -28,8 +28,7 @@ public class Assignment11 {
 		{
 			System.out.println(i);
 		}
-		
-		
+	
 	}
 
 }

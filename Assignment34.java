@@ -27,7 +27,7 @@ public class Assignment34 {
 				countOfDigit++;
 			}
 			
-			if(Character.isSpace(c[i]))
+			if(Character.isWhitespace(c[i]))
 			{
 				countOfSpace++;
 			}
