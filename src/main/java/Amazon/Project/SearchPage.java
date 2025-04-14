@@ -1,5 +1,7 @@
 package Amazon.Project;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,6 +18,9 @@ public class SearchPage {
 	@FindBy(id= "nav-search-submit-button")
 	WebElement searchButton;
 	
+	@FindBy(xpath = "//span[@class=\"a-button-inner\"]/button")
+	List<WebElement> ValidSearch;
+	
 	@FindBy(xpath = "//span[text()='No results for ']")
 	WebElement InvalidSearch;
 	
@@ -27,10 +32,6 @@ public class SearchPage {
 		searchButton.click();
 	}
 	
-	public String InvalidSearchMeth()
-	{
-		return InvalidSearch.getText();
-	}
 	
 	//step3
 	public SearchPage(WebDriver driver)

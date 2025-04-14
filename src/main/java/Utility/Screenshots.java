@@ -13,6 +13,7 @@ import Amazon.Project.BaseTest;
 public class Screenshots {
 
 	public static void ScreenshotsMethod(String Status) throws IOException {
+
 		WebDriver driver = BaseTest.driver;
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
@@ -20,6 +21,6 @@ public class Screenshots {
 		File destination = new File(
 				"F:\\Users\\Pankaj\\eclipse-workspace\\Project\\Screenshots\\"+Status+"\\" + Math.random() + ".png");
 		FileHandler.copy(source, destination);
-
+	    }
 	}
-}
+
