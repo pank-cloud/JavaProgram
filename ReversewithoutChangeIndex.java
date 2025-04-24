@@ -1,6 +1,6 @@
-package abstract_class;
+package StringPrograms;
 
-public class ReversewithoutChangeIndex {
+public class ReverseWithoutChangeIndex {
 
 	public static void main(String[] args) {
 
@@ -14,12 +14,12 @@ public class ReversewithoutChangeIndex {
 		System.out.println(word[2]);
 		System.out.println(word[3]);
 		
-		for(int j = 0 ; j<=word.length-1;j++)
+		for(int i = 0 ; i<=word.length-1;i++)
 		{
 			String reverseword = "";
-			for(int i = word[j].length()-1 ; i>=0; i--)
+			for(int j = word[i].length()-1 ; j>=0; j--)
 			{
-				reverseword = reverseword + word[j].charAt(i);
+				reverseword = reverseword + word[i].charAt(j);
 			}
 			
 			output = output + reverseword + " ";
@@ -29,4 +29,8 @@ public class ReversewithoutChangeIndex {
 		
 	}
 
-}
+
+		
+	}
+
+

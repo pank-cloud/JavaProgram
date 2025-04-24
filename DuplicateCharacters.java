@@ -1,39 +1,36 @@
-package abstract_class;
+package StringPrograms;
 
 import java.util.Arrays;
 
 public class DuplicateCharacters {
 
-	public static void main(String[] args) {
-
-		String name = "automationuubbb";
-		char c1[] = name.toCharArray();
+	public static void main(String[] args) 
+	{
 		
-		Arrays.sort(c1); // {a b b b b c c c d}
-		
-		int count = 1; 
-		
-		for(int i = 0 ; i<c1.length-1 ; i++)
-		{
-
-			if(c1[i] == c1[i+1])
-			{
-				count++;
-
-			}
-
-			else if(count > 1)
-			{	
-				System.out.println(c1[i] + " has occured " +count + "times");	
-				count = 1;
-			}
-		}
-			
-		if(count > 1)
-		{
-			System.out.println(c1[c1.length-1] + " has occured" + count + " times");
-		}
-
+		String s1 = "pankaj";
+		char a[] = s1.toCharArray();
+		Arrays.sort(a);        //{[a, a, j, k, n, p]}
+	    System.out.println(Arrays.toString(a));
+	    
+	    int count = 1;
+	    
+	    for(int i = 0; i < a.length-1 ; i++)
+	    {
+	    if(a[i] == a[i+1])
+	    {
+	    	count++;
+	    }
+	    else if(count>1)
+	    {
+	    	System.out.println(a[i] +"has occured" + i + "times");
+	    }
+	    }
+	    
+	    if(count > 1)
+	    {
+	    	
+	    }
+	    
 	}
 
 }
